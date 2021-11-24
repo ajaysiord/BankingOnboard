@@ -5,6 +5,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import OnboardingScreen from './src/screens/OnboardingScreen';
 import HomeScreen from './src/screens/HomeScreen';
 import DashboardScreen from './src/screens/DashboardScreen';
+import {Text} from './react-native';
 const Stack = createStackNavigator();
 
 const App = () => {			
@@ -14,6 +15,7 @@ const App = () => {
         <Stack.Screen name="OnboardingScreen" component={OnboardingScreen}/>      
       <Stack.Screen name="HomeScreen" component={HomeScreen} />
       <Stack.Screen name="DashboardScreen" component={DashboardScreen} />
+      <Text>hi</Text>
     </Stack.Navigator>
   </NavigationContainer>	
   );			
